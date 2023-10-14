@@ -2,12 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Lizard Spock</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Document</title>
 </head>
 <body>
+    <header>
+        <h2>Rock, Paper, Scissors, Lizard, Spock</h2>
+    </header>
     
-    <script src="assets/js/script.js"></script>
+    <section class="game-area>"
+        <div>
+            <p>Make a choice:</p>
+            <button aria-label="Rock" data-choice="0" class="control"></button>
+            <button aria-label="Paper" data-choice="1" class="control"></button>
+            <button aria-label="Scissors" data-choice="2" class="control"></button>
+            <button aria-label="Lizard" data-choice="3" class="control"></button>
+            <button aria-label="Spock" data-choice="4" class="control"></button>
+        </div>
+        <div id="messages"></div>
+        <div class="player">
+            <h3 class="scores">Your score: <span id="player-score">0</span></h3>
+            <img id="player-image" src="assets/images/RPSLS.png" alt="Rock Paper Scissors Lizard Spock">
+        </div>
+        <div class="computer">
+            <h3 class="scores">Computer score: <span id="computer-score">0</span></h3>
+            <img id="computer-image" src="assets/images/RPSLS.png" alt="Rock Paper Scissors Lizard Spock">
+        </div>
+    </section>
+
+    <footer>
+        <h3>Rules</h3>
+        <p>Rock crushes Scissors | Scissors cuts Paper | Paper covers Rock | Rock crushes Lizard | Lizard poisons Spock | Spock smashes Scissors | Scissors decapitates Lizard | Lizard eats Paper | Paper disproves Spock | Spock vaporizes Rock</p>
+    </footer>
 </body>
 </html>
