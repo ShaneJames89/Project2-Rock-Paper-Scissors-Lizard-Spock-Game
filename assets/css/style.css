@@ -27,8 +27,8 @@ footer {
     min-height: 80px;
     padding-top: 5px;
     text-align: center;
-    color: #fff;
-    background-color: #000;
+    color: white;
+    background-color: lime;
 }
 
 /*Game area*/
@@ -53,7 +53,7 @@ footer {
 }
 
 .player {
-    background-color: lightblue;
+    background-color: lime; 
     float: left;
     width: 45%;
 }
