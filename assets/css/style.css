@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 
-/*Main view setup*/
+/* Main view setup */
 html {
     min-height: 100%;
     position: relative;
@@ -27,11 +27,11 @@ footer {
     min-height: 80px;
     padding-top: 5px;
     text-align: center;
-    color: white;
+    color: black;
     background-color: lime;
 }
 
-/*Game area*/
+/* Game area */
 
 .game-area {
     width: 75%;
@@ -39,6 +39,7 @@ footer {
     margin-right: auto;
     margin-top: 1%;
     text-align: center;
+    max-width: 500px;
 }
 
 .control {
@@ -53,11 +54,25 @@ footer {
 }
 
 .player {
-    background-color: lime; 
-    float: left;
+    background-color: white; 
     width: 45%;
+    float: left;
 }
 
 #player-image {
     width: 75%;
 }
+
+.computer {
+    background-color: white; 
+    float: right;
+    width: 45%;
+    }
+
+#computer-image {
+     width: 75%;
+}
+
+
+
+

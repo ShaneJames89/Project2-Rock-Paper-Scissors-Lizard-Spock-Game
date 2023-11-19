@@ -1,4 +1,4 @@
-/**
+ /**
  * Declare constants for DOM elements
  * and possible choices
  */
@@ -16,28 +16,88 @@ const choices = ["rock", "paper", "scissors", "lizard", "spock"];
  */
 for (let button of buttons) {
     button.addEventListener("click", function () {
-        let playerChoice = this.getAttribute("data-choice");
+        let playerChoice = parseInt(this.getAttribute("data-choice"), 10);
+        console.log("Player clicked:", playerChoice); // Log to check if the click is registered
         playGame(playerChoice);
     });
 }
+
 
 /**
  * The main game function. Accepts one parameter, which 
  * is the date-choice value of the selected button
  */
 function playGame(playerChoice) {
+    console.log("Playing game with choice:", playerChoice); // Log to check if the function is called
 
-    playerImage.src = `assets/images/${choices[playerChoice]}.png`;
-    playerImage.alt = choices[playerChoice];
+    let playerChoiceName = choices[playerChoice];
+    playerImage.src = `assets/images/${playerChoiceName}.png`;
+    playerImage.alt = playerChoiceName;
 
-    let computerChoice = Math.floor(Math.random() * 3);
+    let computerChoiceIndex = Math.floor(Math.random() * 5);
+    let computerChoiceName = choices[computerChoiceIndex];
 
-computerImage.src = `assets/images/${choices[computerChoice]}.png`;
-computerImage.alt = choices[computerChoice];
+    computerImage.src = `assets/images/${computerChoiceName}.png`;
+    computerImage.alt = computerChoiceName;
 
-let result = checkWinner(choices[computerChoice], choices[playerChoice]);
-
-updateScores(result);
+    let result = checkWinner(computerChoiceName, playerChoiceName);
+    updateScores(result);
+    console.log("Result:", result);
 }
 
+/**
+ * Checks to see who the winner is, it accepts two strings as
+ * parameters representing the choices of the computer and player
+ */
 
+function checkWinner(computerChoice, playerChoice) {
+    console.log("Checking Winner...");
+    console.log("Computer Choice:", computerChoice);
+    console.log("Player Choice:", playerChoice);
+
+    if (computerChoice === playerChoice) {
+        return "It's a tie!";
+    }
+
+    if (
+        (computerChoice === "rock" && (playerChoice === "scissors" || playerChoice === "lizard")) ||
+        (computerChoice === "paper" && (playerChoice === "rock" || playerChoice === "spock")) ||
+        (computerChoice === "scissors" && (playerChoice === "paper" || playerChoice === "lizard")) ||
+        (computerChoice === "lizard" && (playerChoice === "spock" || playerChoice === "paper")) ||
+        (computerChoice === "spock" && (playerChoice === "scissors" || playerChoice === "rock"))
+    ) {
+        return "Computer wins!";
+    } else {
+        return "You win!";
+    }
+}
+
+/**
+ * Updates the scores based on the game result
+ */
+function updateScores(result) {
+    if (result === "You win!") {
+        playerScore.textContent = parseInt(playerScore.textContent) + 1;
+    } else if (result === "Computer wins!") {
+        computerScore.textContent = parseInt(computerScore.textContent) + 1;
+    }
+
+    messages.textContent = result;
+}
+
+// Reset the game
+function resetGame() {
+    playerScore.textContent = "0";
+    computerScore.textContent = "0";
+    messages.textContent = "Make a choice:";
+    playerImage.src = "assets/images/RPSLS.png";
+    computerImage.src = "assets/images/RPSLS.png";
+}
+
+// Event listener for the reset button
+const resetButton = document.getElementById("reset-button");
+resetButton.addEventListener("click", resetGame);
+
+document.querySelector('.control').addEventListener('click', () => {
+    console.log('Button Clicked!');
+});
