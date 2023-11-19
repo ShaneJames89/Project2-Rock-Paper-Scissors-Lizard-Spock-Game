@@ -28,7 +28,7 @@ for (let button of buttons) {
  * is the date-choice value of the selected button
  */
 function playGame(playerChoice) {
-    console.log("Playing game with choice:", playerChoice); // Log to check if the function is called
+    console.log("Playing game with choice:", playerChoice);
 
     let playerChoiceName = choices[playerChoice];
     playerImage.src = `assets/images/${playerChoiceName}.png`;
@@ -40,10 +40,14 @@ function playGame(playerChoice) {
     computerImage.src = `assets/images/${computerChoiceName}.png`;
     computerImage.alt = computerChoiceName;
 
+    console.log("Player Image:", playerImage.src);
+    console.log("Computer Image:", computerImage.src);
+
     let result = checkWinner(computerChoiceName, playerChoiceName);
     updateScores(result);
     console.log("Result:", result);
 }
+
 
 /**
  * Checks to see who the winner is, it accepts two strings as
