@@ -34,6 +34,14 @@
 
 ![ResultsArea](assets/images/results.png)
 
+- __The Rules Area__
+
+  - This section explains the rules in detail i.e Rock Crushes Scissors
+  - This section also includes a reset button if the player wants to start from scratch.
+  
+
+![RulesArea](assets/images/rules.png)
+
 ## Testing 
 
 ### Validator Testing 
@@ -67,19 +75,12 @@ The live link can be found here - https://shanejames89.github.io/Project2-Rock-P
 
 
 ## Credits 
-
-In this section you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
-
-You can break the credits section up into Content and Media, depending on what you have included in your project. 
-
 ### Content 
 
-- The text for the Home page was taken from Wikipedia Article A
-- Instructions on how to implement form validation on the Sign Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
+- I used chatgpt for some suggestions on site building but only used a small bit of the code suggested.
+- The fonts used were taken from Google fonts.
 
 ### Media
 
-- The photos used on the home and sign up page are from This Open Source site
-- The images used for the gallery page were taken from this other open source site
+- The icons used for the player and computer choice were taken from this music artist Geoffrey The Giant(https://open.spotify.com/album/5HUZ024Mz8PYadkfx5Dmz2)
 
