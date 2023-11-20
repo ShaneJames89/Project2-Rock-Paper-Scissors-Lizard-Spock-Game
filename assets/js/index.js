@@ -94,8 +94,8 @@ function resetGame() {
     playerScore.textContent = "0";
     computerScore.textContent = "0";
     messages.textContent = "Make a choice:";
-    playerImage.src = "assets/images/RPSLS.png";
-    computerImage.src = "assets/images/RPSLS.png";
+    playerImage.src = "assets/images/rpsls.png";
+    computerImage.src = "assets/images/leaf.png";
 }
 
 // Event listener for the reset button

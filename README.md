@@ -1,6 +1,6 @@
 # ROCK PAPER SCISSORS LIZARD SPOCK GAME
 
-  The ROCK PAPER SCISSORS LIZARD SPOCK game is a site that hopes to demonstrate how pure JavaScript works in a real-world context. The site will be targeted toward people who not only love to implement more advanced JavaScript concepts but also who love games. ROCK PAPER SCISSORS LIZARD SPOCK game is a fully responsive JavaScript game that will allow users to pick different options going up against the computer. It is made popular by the tv show "The Big Bang Theory". You can follow the link (https://8000-shanejames8-project2roc-elmweldks26.ws-eu106.gitpod.io/) to check the game.
+  The ROCK PAPER SCISSORS LIZARD SPOCK game is a site that hopes to demonstrate how pure JavaScript works in a real-world context. The site will be targeted toward people who not only love to implement more advanced JavaScript concepts but also who love games. ROCK PAPER SCISSORS LIZARD SPOCK game is a fully responsive JavaScript game that will allow users to pick different options going up against the computer. It is made popular by the tv show "The Big Bang Theory". 
 
 ![Responsive Mockup](assets/images/responsive.png)
 
@@ -63,7 +63,7 @@
   - From the source section drop-down menu, select the Master Branch
   - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
 
-The live link can be found here - https://code-institute-org.github.io/love-maths/
+The live link can be found here - https://shanejames89.github.io/Project2-Rock-Paper-Scissors-Lizard-Spock-Game/
 
 
 ## Credits 
